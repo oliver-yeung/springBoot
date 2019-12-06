@@ -1,0 +1,16 @@
+#jdbc配置
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql//localhost/springboot_test
+  username: root
+  password: root
+
+#日志级别控制
+logging:
+  level:
+    com.oliveryn: debug
+    org.springframework: info
+
+  #映射端口
+server:
+  port: 80
