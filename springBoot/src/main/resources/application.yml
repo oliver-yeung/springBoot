@@ -1,16 +1,38 @@
-#jdbc配置
 jdbc:
   driverClassName: com.mysql.jdbc.Driver
-  url: jdbc:mysql//localhost/springboot_test
+  url: jdbc:mysql://127.0.0.1:3306/springboot_test
   username: root
   password: root
 
-#日志级别控制
-logging:
-  level:
-    com.oliveryn: debug
-    org.springframework: info
+spring:
+  datasource:
+    driver-Class-Name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot_test
+    username: root
+    password: root
+  #可省略
+  redis:
+    host: localhost
+    port: 6379
+    database: 0 #redis默认库16个 选择第0个库
+
+
 
   #映射端口
 server:
   port: 80
+
+mybatis:
+  # 实体类别名包路径
+  type-aliases-package: com.oliveryn.pojo
+  # 映射文件路径
+  # mapper-locations: classpath:mappers/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+    #日志级别控制
+    #logging:
+    # level:
+    #  com.oliveryn: debug
+    # org.springframework: info

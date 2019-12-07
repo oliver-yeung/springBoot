@@ -8,12 +8,12 @@ import javax.sql.DataSource;
 
 @RestController
 public class HelloController {
-    //注入数据源
+    /*//注入数据源
     @Autowired
-    private DataSource dataSource;
+    private DataSource dataSource;*/
     @GetMapping("hello")
     public String hello(){
-        System.out.println(dataSource);
+        //System.out.println(dataSource);
         return "hello, spring boot!";
     }
 }

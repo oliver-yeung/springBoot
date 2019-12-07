@@ -8,14 +8,14 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 
-@Configuration
+//@Configuration
 //@PropertySource("classpath:jdbc.properties")
 //@EnableConfigurationProperties(JdbcProperties.class)
 public class JdbcConfig {
-    @Bean
+    /*@Bean
     @ConfigurationProperties(prefix = "jdbc")
     public DataSource dataSource(){
         DruidDataSource dataSource = new DruidDataSource();
         return dataSource;
-    }
+    }*/
 }
