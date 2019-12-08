@@ -15,9 +15,11 @@ spring:
     host: localhost
     port: 6379
     database: 0 #redis默认库16个 选择第0个库
-
-
-
+    #发送邮件
+  mail:
+    host: smtp.163.com
+    username: oliver_yeung@163.com
+    password: 980725yb
   #映射端口
 server:
   port: 80
